@@ -21,7 +21,7 @@
         <img src="@/assets/imagens/estrelas.png" alt="estrelas" />
         <div class="flex-alinhar">
           <a href="#" class="btn-red-pequeno">COMPRAR</a>
-          <p>{{Produto.Preco}}</p>
+          <p>R$ {{ Produto.Preco }}</p>
         </div>
       </div>
       <div>
@@ -39,35 +39,35 @@ export default {
        Produtos:[
             {
                 id: 1,
-                img:"../assets/imagens/caf1.png",
+                img:require("../assets/imagens/caf1.png"),
                 Nome_Produto: "Cafeteira Elétrica Arno",
                 Nome_Marca: "Oster 4401",
                 Descricao:"Deixe sua casa com cheirinho de café com a prática Cafeteira Pratic da Mondial. A cafeteira pode preparar café para até 17 xícaras. Possui um sistema corta-pingos que facilita o seu manuseio e placa de aquecimento que mantém o café quente sem alterar seu sabor.",
-                Preco:120.55
+                Preco:"88,91"
             },
             {
                 id: 2,
-                img:"../assets/imagens/caf2.png",
+                img:require("../assets/imagens/caf2.png"),
                 Nome_Produto: "Cafeteira Mondial",
                 Nome_Marca: "MONDIAL",
-                Descricao:" A Mondial é a escolha de milhões de consumidores. Sempre inovando e buscando soluções para o bem-estar das pessoas, oferece uma linha completa de produtos. Em constantes pesquisas junto aos consumidores, seu portfólio ganha destaque na qualidade, no design moderno e na excelente relação custo x benefício. A Mondial orgulha-se de ser 100% brasileira.",
-                Preco:90.99
+                Descricao:"A Mondial é a escolha de milhões de consumidores. Sempre inovando e buscando soluções para o bem-estar das pessoas, oferece uma linha completa de produtos. Em constantes pesquisas junto aos consumidores, seu portfólio ganha destaque na qualidade, no design moderno e na excelente relação custo x benefício. A Mondial orgulha-se de ser 100% brasileira.",
+                Preco:"90,99"
             },
             {
                 id: 3,
-                img:"../assets/imagens/caf3.png",
+                img:require("../assets/imagens/caf3.png"),
                 Nome_Produto: "Nescafé dolce Gusto",
                 Nome_Marca: "Nescal",
-                Descricao:" A Nescal é a escolha de milhões de consumidores. Sempre inovando e buscando soluções para o bem-estar das pessoas, oferece uma linha completa de produtos. Em constantes pesquisas junto aos consumidores.",
-                Preco:199.99
+                Descricao:"A Nescal é a escolha de milhões de consumidores. Sempre inovando e buscando soluções para o bem-estar das pessoas, oferece uma linha completa de produtos. Em constantes pesquisas junto aos consumidores.",
+                Preco:"99,99"
             },
             {
                 id: 4,
-                img:"../assets/imagens/caf4.png",
+                img:require("../assets/imagens/caf4.png"),
                 Nome_Produto: "Cafeteira Eletrica",
                 Nome_Marca: "Mondial",
                 Descricao:" RESUMIDA Compacta e Prática. Prepara 2 deliciosos cafés de 120ml ao mesmo tempo. O café fica pronto rapidamente, quentinho, direto na xícara e na medida certa.",
-                Preco:97.99
+                Preco:"97,99"
             }
       ]
     };
@@ -79,11 +79,13 @@ export default {
 p {
   font-size: 20px;
   font-weight: 500;
-  padding: 0px 5px;
-}
+  padding: 0px 5px;}
+
 .produto {
-  padding: 30px 0px 0px 30px;
+  width: 180px;
+  padding: 30px 0px 15px 30px;
 }
+
 .tags {
   position: absolute;
   padding: 0px 10px;
@@ -109,10 +111,10 @@ p {
   border: 2px solid #7b0202;
 }
 .box-produto {
-  border: 2px solid #7b7575;
+  border: 1px solid #7b7575;
   border-radius: 10px;
-  width: 240px;
-  height: 320px;
+  width: 230px;
+  height: 300px;
   background-color: #fff;
   box-shadow: 0 0 0.2em #222;
   padding: 0px 10px;
