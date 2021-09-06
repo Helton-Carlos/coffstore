@@ -5,6 +5,7 @@
       <Produto />
       <Propaganda />
       <NewsLetter />
+      <Dicas />
   </div>
 </template>
 
@@ -14,11 +15,11 @@ import Main from "@/components/Main.vue"
 import Produto from "@/components/Produto.vue"
 import Propaganda from '@/components/Propaganda.vue'
 import NewsLetter from '@/components/NewsLetter.vue'
+import Dicas from '@/components/Dicas.vue'
 
 export default {
   name: 'Home',
-  components:{Header,Main,Produto,Propaganda, NewsLetter}
- 
+  components:{Header,Main,Produto,Propaganda, NewsLetter,Dicas}
 }
 </script>
 q

@@ -7,8 +7,9 @@
         name="email"
         id="email"
         placeholder="ENVIE SEU E-MAIL"
+        v-model="ReceberEmail"
       />
-      <button class="btn-margem">Enviar</button>
+      <button class="btn-margem" @click="EnviarArquivo">Enviar</button>
     </div>
   </div>
 </template>
@@ -16,7 +17,15 @@
 <script>
 export default {
   setup() {
-    return {};
+    return {
+      ReceberEmail:""
+    };
+  },
+  methods: {
+    EnviarArquivo() {
+      alert(this.ReceberEmail);
+    },
+    //this.ReceberEmail=""
   },
 };
 </script>

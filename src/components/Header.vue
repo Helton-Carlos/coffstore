@@ -23,7 +23,7 @@
             </div>
             <div class="flex-coluna">
               <p><strong>Tel: (11) 2384-0521</strong></p>
-              <p>Seg às Sex 
+              <p>Seg às Sex
               <br><strong>09:00h às 18:00h</strong></p>
             </div>
           </div>

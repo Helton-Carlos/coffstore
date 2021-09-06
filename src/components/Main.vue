@@ -14,9 +14,7 @@
             <br />
             de lotes oriundos de uma única fazenda.
           </p>
-          <a href="#" class="btn-red espaco-direita">
-            CONHEÇA <img src="@/assets/imagens/seta-btn.png" alt="seta" />
-          </a>
+        <BtnPadrao  @AcaoBtn="AcaoMain"/>
         </div>
       </div>
       <div class="efeitos">
@@ -28,15 +26,23 @@
 </template>
 
 <script>
-export default {};
+import BtnPadrao from '@/components/BtnPadrao.vue'
+export default {
+  components:{BtnPadrao},
+  data(){
+  },
+  methods:{
+     AcaoMain(){
+      alert('O Café Arlvac')
+     }
+  }
+};
 </script>
 
 <style>
 .background {background-image: url("../assets/imagens/background-main.png");
   width: 100%;height: 50vh; margin-top: 20px; background-position: center;}
-.btn-red{background-color: #7B0202;
-padding: 8px 25px; color:#fff;width: 150px;}
-.btn-red:hover{background-color: rgb(39, 7, 7);transition: 1s;}
 .espaco-cima{padding: 40px 0px 10px;}
 .espaco-baixo{padding-bottom: 10px;}
+p{margin-bottom: 10px }
 </style>

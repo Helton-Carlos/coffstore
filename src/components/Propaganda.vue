@@ -7,19 +7,24 @@
           Café bom é o tradicional, o cheirinho do café é sinal de energia na
           sua rede de trabalho e em sua casa é a hora de uma boa prosa.
         </p>
-        <router-link to="/Cafe">
-          CONHEÇA <span> <img src="../assets/imagens/seta-btn.png" alt="seta-btn"></span>
-        </router-link>
+        <BtnPadrao @AcaoBtn="AcaoPropaganda" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import BtnPadrao from '@/components/BtnPadrao.vue'
 export default {
+  components:{BtnPadrao},
   data() {
     return {};
   },
+  methods:{
+    AcaoPropaganda(){
+      alert('Ir propaganda')
+    }
+  }
 };
 </script>
 
@@ -47,16 +52,5 @@ p {
   font-family: "Kaisei HarunoUmi", serif;
   margin-bottom: 40px;
 }
-a{
-    color:#fff;
-    font-weight: 500;
-    background-color:#7b0202;
-    padding: 10px 50px;
-}
-a:hover{
-    color:#fff;
-    font-weight: 500;
-    background-color:#4d4949;
-    padding: 10px 50px;
-}
+
 </style>
