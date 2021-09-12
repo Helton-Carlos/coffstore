@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .background {background-image: url("../assets/imagens/background-main.png");
   width: 100%;height: 50vh; margin-top: 20px; background-position: center;}
 .espaco-cima{padding: 40px 0px 10px;}

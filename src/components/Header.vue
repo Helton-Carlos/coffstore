@@ -18,14 +18,10 @@
       <div>
         <div class="flex">
           <div class="flex-coluna">
-            <div class="flex-coluna">
-              <p>FRETE GRÁTIS</p>
-            </div>
-            <div class="flex-coluna">
-              <p><strong>Tel: (11) 2384-0521</strong></p>
+              <p>FRETE GRÁTIS
+              <br><strong>Tel: (11) 2384-0521</strong></p>
               <p>Seg às Sex
               <br><strong>09:00h às 18:00h</strong></p>
-            </div>
           </div>
         </div>
       </div>
