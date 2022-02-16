@@ -24,4 +24,3 @@ export default {
   components: { Header, Main, Produto, Propaganda, NewsLetter, Dicas, Footer },
 };
 </script>
-q

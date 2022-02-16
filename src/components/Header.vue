@@ -9,7 +9,7 @@
         <div class="flex">
           <a href="#" class="fonte-branco"><p>Entrar</p></a>
           <p>|</p>
-          <a href="#" class="fonte-branco"><p class="espaco-direita">Cadastre-se</p></a>
+          <router-link  to="/Cadastrar" class="fonte-branco"><p class="espaco-direita">Cadastre-se</p></router-link>
           <img src="@/assets/imagens/usuario.png" alt="usuario" />
         </div>
       </div>
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="espaco">
-        <img src="@/assets/imagens/CoffStore.png" alt="CoffStore" />
+         <a href="#" > <img src="@/assets/imagens/CoffStore.png" alt="CoffStore" />  </a>
       </div>
       <div>
         <p><strong>Favorito: {{ favorito }}</strong></p>
@@ -36,7 +36,7 @@
     <div class="flex-container">
       <nav class="center">
         <ul class="flex" >
-          <li v-for="navegar in navegacao" :key="navegar"><a href="#" class="navegar">{{navegar}}</a></li>
+          <li v-for="navegar in navegacao" :key="navegar"><router-link class="navegar" :to="navegar.rotas">{{navegar.nome}}</router-link></li>
         </ul>
       </nav>
     </div>
@@ -50,7 +50,13 @@ export default {
     return {
       favorito: 0,
       carrinho: 0,
-      navegacao:['CAFÉS','CAFETEIRAS','CHÁ','ACESSÓRIOS','CONTATOS']
+      navegacao:[
+        {nome:'CAFÉS',rotas:'cafes'},
+        {nome:'CAFETEIRAS',rotas:'cafeteiras'},
+        {nome:'CHÁ',rotas:'cha'},
+        {nome:'ACESSÓRIOS',rotas:'acessorios'},
+        {nome:'CONTATOS',rotas:'contatos'}
+      ]
     };
   },
 };
@@ -68,7 +74,8 @@ export default {
 .espaco {
   padding: 12px 0px;
 }
-
+.router-link{
+color:#7b0202;display: flex;}
 p {
   font-size: 14px;
   font-weight: 600;
@@ -81,7 +88,7 @@ p {
   color: #000000;
   font-weight: 700;
 }
-.navegar:hover {
+.navegar:hover, .router-link-exact-active {
   border-bottom: 4px solid #7b0202;
 }
 li {
