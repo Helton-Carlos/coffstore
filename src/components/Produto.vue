@@ -75,15 +75,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 p {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   padding: 0px 5px;}
 
 .produto {
-  width: 180px;
-  padding: 30px 0px 15px 30px;
+  width: 190px;
+  padding: 20px 0px 15px 20px;
 }
 
 .tags {
@@ -97,10 +97,10 @@ p {
 .btn-selecao {
   border-radius: 25px;
   border: 2px solid #7b7575;
-  padding: 5px 10px;
-  font-weight: 700;
+  padding: 4px 8px;
+  font-weight: 600;
   color: #7b7575;
-  margin: 20px 10px;
+  margin: 15px 8px;
 }
 .margem-topo {
   margin-top: 50px;
@@ -118,11 +118,11 @@ p {
   background-color: #fff;
   box-shadow: 0 0 0.2em #222;
   padding: 0px 10px;
-  margin: 0px 15px;
+  margin: 10px 6px;
 }
 .btn-red-pequeno {
   background-color: #7b0202;
-  padding: 5px 20px;
+  padding: 4px 10px;
   color: #fff;
 }
 .btn-red-pequeno:hover {

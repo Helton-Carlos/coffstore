@@ -12,7 +12,8 @@ import Footer from "@/components/Footer.vue";
 import ProdutosGerais from "@/components/ProdutosGerais.vue";
 
 export default {
-  name: "Cafeteiras",
+
   components: { Header, Footer,ProdutosGerais },
+    name: "Cafeteiras",
 };
 </script>
