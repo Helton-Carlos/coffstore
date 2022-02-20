@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width:90%;margin: 0 auto">
     <h2 class=" alinhar-texto">
       DICAS PARA SEU
       <div class="red">CAFÉ TER MAIS ESTILO</div>

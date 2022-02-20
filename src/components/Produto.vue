@@ -15,11 +15,7 @@
         {{ titulos }}
       </a>
     </div>
-    <div class="flex-alinhar">
-      <div>
-        <img src="@/assets/imagens/arrow-left.png" alt="seta-esquerda" />
-      </div>
-
+    <div class="flex-alinhar flex-container" style="width:80%;margin: 0 auto">
       <div
         class="box-produto"
         v-for="(Produto, index) in this.getProdutos"
@@ -34,9 +30,6 @@
           <p>R$ {{ Produto.Preco }}</p>
         </div>
       </div>
-      <div>
-        <img src="@/assets/imagens/arrow-rigth.png" alt="seta-esquerda" />
-      </div>
     </div>
   </section>
 </template>
@@ -47,39 +40,44 @@ export default {
   data() {
     return {
       titulo: ["CAFÉ", "CAFETEIRA", "CHÁ", "ACESSÓRIOS"],
+      getProdutos: [],
+      mudarIndex: 0,
     };
   },
   methods: {
     marcasAtivas(indexTitulos) {
-      if (indexTitulos === 0) {
+      if (indexTitulos === 0 || indexTitulos === undefined) {
+        this.getProdutos = [];
         let Vproduto = cafe();
         for (let i = 0; i < 4; i++) {
-          console.log(i);
           this.getProdutos.push(Vproduto.cafe[i]);
         }
       }
       if (indexTitulos === 1) {
+        this.getProdutos = [];
         let Vproduto = cafeteira();
         for (let i = 0; i < 4; i++) {
-          console.log(i);
           this.getProdutos.push(Vproduto.cafeteiras[i]);
         }
       }
       if (indexTitulos === 2) {
+        this.getProdutos = [];
         let Vproduto = cha();
         for (let i = 0; i < 4; i++) {
-          console.log(i);
           this.getProdutos.push(Vproduto.cha[i]);
         }
       }
       if (indexTitulos === 3) {
+        this.getProdutos = [];
         let Vproduto = acessorio();
         for (let i = 0; i < 4; i++) {
-          console.log(i);
           this.getProdutos.push(Vproduto.acessorio[i]);
         }
       }
     },
+  },
+  created() {
+    this.marcasAtivas();
   },
 };
 </script>

@@ -11,7 +11,6 @@
           <h2 class="espaco-cima">O Café Arlvac</h2>
           <p class="espaco-baixo">
             Superior Gourmet é trabalhado a partir
-            <br />
             de lotes oriundos de uma única fazenda.
           </p>
         <BtnPadrao  @AcaoBtn="AcaoMain"/>
