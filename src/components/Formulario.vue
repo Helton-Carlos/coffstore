@@ -17,7 +17,7 @@
         <input
           type="tel"
           id="foneid"
-          placeholder="(xx)xx-xx-xx-xx"
+          placeholder="(xx)xxxxx-xx-xx"
           name="fone"
         />
 

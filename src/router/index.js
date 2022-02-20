@@ -4,11 +4,15 @@ import Cafes from '../views/Cafes.vue'
 
 const routes = [
   {
+    path: '/home',
+    redirect: '/',
+  },
+  {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+
   },
-  
   {
     path: '/Acessorios',
     name: 'Acessorios',
