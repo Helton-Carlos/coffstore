@@ -10,8 +10,8 @@
 - npm run serve
 
 
-- Website: [@PiyushSthr](https://www.heltonbrito.com.br/)
-- Github: [@PiyushSthr](https://github.com/Helton-Carlos)
-- LinkedIn: [@piyushsthr](https://www.linkedin.com/in/helton-brito-856ba516b/)
+- Website: (https://www.heltonbrito.com.br/)
+- Github:(https://github.com/Helton-Carlos)
+- LinkedIn:(https://www.linkedin.com/in/helton-brito-856ba516b/)
 
 <div align="center">VUEJS ❤</div>
