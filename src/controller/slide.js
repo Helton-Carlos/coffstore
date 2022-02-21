@@ -1,6 +1,6 @@
 export function slide() {
   const json = {
-    produtos: [
+    slideProduto: [
       {
         id: 1,
         img: require("../assets/imagens/embalagem.png"),
@@ -10,17 +10,17 @@ export function slide() {
       },
       {
         id: 2,
-        img: require("../assets/imagens/cafe1.png"),
-        Nome_Produto: "Café Pilão Torrado",
+        img: require("../assets/imagens/cafe_gourmet.png"),
+        Nome_Produto: "Artesanal 250g",
         Descricao:
-          "O café Pilão Tradicional, de intensidade 8, disponível na versão à vácuo de 500g, tem um ponto de torra acentuado e um processo de moagem fina e uniforme, que garantem e preservam seu sabor forte e encorpado. É perfeito para o seu dia a dia.",
+          "A moagem artesanal garante um café com muito mais qualidade, complexidade e sabor.",
       },
       {
         id: 3,
-        img: require("../assets/imagens/cafe1.png"),
-        Nome_Produto: "Café Pilão Torrado",
+        img: require("../assets/imagens/moido.png"),
+        Nome_Produto: "Café Torrado",
         Descricao:
-          "O café Pilão Tradicional, de intensidade 8, disponível na versão à vácuo de 500g, tem um ponto de torra acentuado e um processo de moagem fina e uniforme, que garantem e preservam seu sabor forte e encorpado. É perfeito para o seu dia a dia.",
+          "Desde 2009 no Mercado Livre, 100% de avaliações positivas. Qualificação em destaque.",
       },
     ],
   };
