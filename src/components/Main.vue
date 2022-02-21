@@ -7,16 +7,14 @@
             src="@/assets/imagens/SETA=BAIXO.png"
             alt="seta"
             @click="menosIndex()"
+            class="click-btn"
           />
         </div>
         <div class="flex" v-for="(descricao, i) in produto" :key="i">
-          <img
-            :src="descricao.img"
-            :alt="descricao.Nome_Produto"
-          />
+          <img :src="descricao.img" :alt="descricao.Nome_Produto" />
           <div class="flex-coluna alinhar-esquerda fonte-branco">
             <h2 class="espaco-cima">{{ descricao.Nome_Produto }}</h2>
-            <p class="espaco-baixo" style="width:450px">
+            <p class="espaco-baixo" style="width: 450px">
               {{ descricao.Descricao }}
             </p>
             <BtnPadrao @AcaoBtn="AcaoMain" />
@@ -27,6 +25,7 @@
             src="@/assets/imagens/SETA=BAIXO-1.png"
             alt="seta"
             @click="maisIndex()"
+            class="click-btn"
           />
         </div>
       </div>
@@ -92,5 +91,8 @@ export default {
 }
 p {
   margin-bottom: 10px;
+}
+.click-btn:hover {
+  transform: scale(1.1, 1.1);
 }
 </style>

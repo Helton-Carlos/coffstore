@@ -20,7 +20,11 @@
       <div>
         <div class="flex">
           <div class="flex-coluna">
-            <p>FRETE GRÁTIS <br /><strong>Tel: (11) 2384-0521</strong></p>
+            <div class="flex">
+              <img src="../assets/imagens/frete.png" alt="frete" />
+              <p style="margin-top: 2px">FRETE GRÁTIS</p>
+            </div>
+            <p><strong>Tel: (11) 2384-0521</strong></p>
             <p>Seg às Sex <br /><strong>09:00h às 18:00h</strong></p>
           </div>
         </div>
@@ -31,12 +35,18 @@
         </a>
       </div>
       <div>
-        <p>
-          <strong>Favorito: {{ favorito }}</strong>
-        </p>
-        <p>
-          <strong>Produtos: {{ carrinho }}</strong>
-        </p>
+        <div class="flex">
+          <img src="../assets/imagens/coracao.png" alt="coracao" />
+          <p>
+            <strong>Favorito: {{ favorito }}</strong>
+          </p>
+        </div>
+        <div class="flex">
+          <img src="../assets/imagens/carrinho.png" alt="carrinho" />
+          <p style="margin-top: 5px">
+            <strong>Produtos: {{ carrinho }}</strong>
+          </p>
+        </div>
       </div>
     </div>
     <div class="flex-container">
@@ -60,7 +70,7 @@ export default {
     return {
       favorito: 0,
       carrinho: 0,
-      navegacao: [  
+      navegacao: [
         { nome: "CAFÉS", rotas: "cafes" },
         { nome: "CAFETEIRAS", rotas: "cafeteiras" },
         { nome: "CHÁ", rotas: "cha" },
