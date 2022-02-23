@@ -82,7 +82,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .topo {
   background-color: #7b0202;
   width: 100%;

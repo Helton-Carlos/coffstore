@@ -4,27 +4,27 @@
       <div class="espaco">
         <h2>Rei do café</h2>
         <p>
-          Café bom é o tradicional, o cheirinho do café é sinal de energia na
-          sua rede de trabalho e em sua casa é a hora de uma boa prosa.
+          Café bom é o tradicional, o cheirinho do café é sinal de energia na sua rede de
+          trabalho e em sua casa é a hora de uma boa prosa.
         </p>
-        <BtnPadrao @AcaoBtn="AcaoPropaganda" />
+        <BtnPadrao text="CONHEÇA" @AcaoBtn="AcaoMain" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import BtnPadrao from '@/components/BtnPadrao.vue'
+import BtnPadrao from "@/components/BtnPadrao.vue";
 export default {
-  components:{BtnPadrao},
+  components: { BtnPadrao },
   data() {
     return {};
   },
-  methods:{
-    AcaoPropaganda(){
-      alert('Ir propaganda')
-    }
-  }
+  methods: {
+    AcaoPropaganda() {
+      alert("Ir propaganda");
+    },
+  },
 };
 </script>
 
@@ -37,7 +37,7 @@ export default {
   margin-top: 50px;
   color: #fff;
 }
-.espaco{
+.espaco {
   width: 450px;
   padding: 35px;
 }
@@ -52,5 +52,4 @@ p {
   font-family: "Kaisei HarunoUmi", serif;
   margin-bottom: 40px;
 }
-
 </style>

@@ -110,7 +110,7 @@ export function cafe() {
   const json = {
     cafe: [
       {
-        id: 1,
+        id: 11,
         tipo: "cafe",
         img: require("../assets/imagens/cafe1.png"),
         Nome_Produto: "Café Pilão Torrado",
@@ -120,7 +120,7 @@ export function cafe() {
         Preco: "20,00",
       },
       {
-        id: 2,
+        id: 12,
         tipo: "cafe",
         img: require("../assets/imagens/cafe2.png"),
         Nome_Produto: "CAFÉ MELITTA",
@@ -130,7 +130,7 @@ export function cafe() {
         Preco: "15,99",
       },
       {
-        id: 3,
+        id: 13,
         tipo: "cafe",
         img: require("../assets/imagens/cafe5.png"),
         Nome_Produto: "Café Extraforte",
@@ -140,7 +140,7 @@ export function cafe() {
         Preco: "19,90",
       },
       {
-        id: 4,
+        id: 14,
         tipo: "cafe",
         img: require("../assets/imagens/cafe4.png"),
         Nome_Produto: "Café Tradicional ",
@@ -150,7 +150,7 @@ export function cafe() {
         Preco: "17,99",
       },
       {
-        id: 5,
+        id: 15,
         tipo: "cafe",
         img: require("../assets/imagens/cafe3.png"),
         Nome_Produto: "Café no Bule",
@@ -168,7 +168,7 @@ export function cha() {
   const json = {
     cha: [
       {
-        id: 1,
+        id: 16,
         tipo: "cha",
         img: require("../assets/imagens/cha1.png"),
         Nome_Produto: "Chá Verde",
@@ -178,7 +178,7 @@ export function cha() {
         Preco: "3,91",
       },
       {
-        id: 2,
+        id: 17,
         tipo: "cha",
         img: require("../assets/imagens/cha2.png"),
         Nome_Produto: "Chá Matte Leão",
@@ -188,7 +188,7 @@ export function cha() {
         Preco: "6,99",
       },
       {
-        id: 3,
+        id: 18,
         tipo: "cha",
         img: require("../assets/imagens/cha3.png"),
         Nome_Produto: "Chá Universal",
@@ -198,7 +198,7 @@ export function cha() {
         Preco: "24,99",
       },
       {
-        id: 4,
+        id: 19,
         tipo: "cha",
         img: require("../assets/imagens/cha4.png"),
         Nome_Produto: "MagrePlan ",
@@ -208,7 +208,7 @@ export function cha() {
         Preco: "60,99",
       },
       {
-        id: 5,
+        id: 20,
         tipo: "cha",
         img: require("../assets/imagens/cha5.png"),
         Nome_Produto: "Kit Chá Mate",
@@ -226,7 +226,7 @@ export function acessorio() {
   const json = {
     acessorio: [
       {
-        id: 1,
+        id: 21,
         tipo: "cafeteira",
         img: require("../assets/imagens/caf1.png"),
         Nome_Produto: "Cafeteira Elétrica Arno",
@@ -236,7 +236,7 @@ export function acessorio() {
         Preco: "88,91",
       },
       {
-        id: 2,
+        id: 22,
         tipo: "cafeteira",
         img: require("../assets/imagens/caf2.png"),
         Nome_Produto: "Cafeteira Mondial",
@@ -246,7 +246,7 @@ export function acessorio() {
         Preco: "90,99",
       },
       {
-        id: 3,
+        id: 23,
         tipo: "cafe",
         img: require("../assets/imagens/cafe5.png"),
         Nome_Produto: "Café Extraforte",
@@ -256,7 +256,7 @@ export function acessorio() {
         Preco: "19,90",
       },
       {
-        id: 4,
+        id: 24,
         tipo: "cafe",
         img: require("../assets/imagens/cafe4.png"),
         Nome_Produto: "Café Tradicional ",
@@ -266,7 +266,7 @@ export function acessorio() {
         Preco: "17,99",
       },
       {
-        id: 5,
+        id: 25,
         tipo: "cafe",
         img: require("../assets/imagens/cafe3.png"),
         Nome_Produto: "Café no Bule",
@@ -276,7 +276,7 @@ export function acessorio() {
         Preco: "19,29",
       },
       {
-        id: 6,
+        id: 26,
         tipo: "cafeteira",
         img: require("../assets/imagens/Cafeteira_Expresso_Mondial.png"),
         Nome_Produto: "Cafeteira Expresso ",
@@ -286,7 +286,7 @@ export function acessorio() {
         Preco: "300,99",
       },
       {
-        id: 7,
+        id: 27,
         tipo: "cafeteira",
         img: require("../assets/imagens/Cafeteira_Single.png"),
         Nome_Produto: "Cafeteira Single",
@@ -296,7 +296,7 @@ export function acessorio() {
         Preco: "70,00",
       },
       {
-        id: 8,
+        id: 28,
         tipo: "cafeteira",
         img: require("../assets/imagens/Cafeteira_Expresso_Oster.png"),
         Nome_Produto: "Cafeteira Expresso Oster",
@@ -306,7 +306,7 @@ export function acessorio() {
         Preco: "999,99",
       },
       {
-        id: 9,
+        id: 29,
         tipo: "cafeteira",
         img: require("../assets/imagens/Cafeteira_britania.png"),
         Nome_Produto: "Cafeteira Britânia ",
@@ -316,7 +316,7 @@ export function acessorio() {
         Preco: " 122,50",
       },
       {
-        id: 10,
+        id: 30,
         tipo: "cafeteira",
         img: require("../assets/imagens/CAF218_Single.png"),
         Nome_Produto: "Cafeteira Cadence",
@@ -326,7 +326,7 @@ export function acessorio() {
         Preco: "999,99",
       },
       {
-        id: 11,
+        id: 31,
         tipo: "cafe",
         img: require("../assets/imagens/cafe4.png"),
         Nome_Produto: "Café Tradicional ",
@@ -336,7 +336,7 @@ export function acessorio() {
         Preco: "17,99",
       },
       {
-        id: 12,
+        id: 32,
         tipo: "cafe",
         img: require("../assets/imagens/cafe3.png"),
         Nome_Produto: "Café no Bule",

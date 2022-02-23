@@ -1,31 +1,33 @@
 <template>
-    <div>
-        <a href="#" @click.prevent="$emit('AcaoBtn')">
-          CONHEÇA <span><img src="../assets/imagens/seta-btn.png" alt="seta-btn"></span>
-        </a>
-    </div>
+  <div>
+    <a href="#" @click.prevent="$emit('AcaoBtn')">
+      {{ text }}
+      <span><img src="../assets/imagens/seta-btn.png" alt="seta-btn" /></span>
+    </a>
+  </div>
 </template>
 
 <script>
 export default {
-    emits:['AcaoBtn'],
-    setup () {
-        return {}
-    }
-}
+  emits: ["AcaoBtn"],
+  props: ["text"],
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>
-a{
-    color:#fff;
-    font-weight: 500;
-    background-color:#7b0202;
-    padding: 10px 50px;
+a {
+  color: #fff;
+  font-weight: 500;
+  background-color: #7b0202;
+  padding: 10px 50px;
 }
-a:hover{
-    color:#fff;
-    font-weight: 500;
-    background-color:#4d4949;
-    padding: 10px 50px;
+a:hover {
+  color: #fff;
+  font-weight: 500;
+  background-color: #4d4949;
+  padding: 10px 50px;
 }
 </style>

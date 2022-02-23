@@ -26,7 +26,7 @@
         <h4>{{ Produto.Nome_Produto }}</h4>
         <img src="@/assets/imagens/estrelas.png" alt="estrelas" />
         <div class="flex-alinhar">
-          <a href="#" class="btn-red-pequeno">COMPRAR</a>
+          <router-link :to="{name:'Produtos',params:{id:Produto.id}}" class="btn-red-pequeno">COMPRAR</router-link>
           <p>R$ {{ Produto.Preco }}</p>
         </div>
       </div>

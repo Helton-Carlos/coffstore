@@ -17,7 +17,7 @@
             <p class="espaco-baixo" style="width: 450px">
               {{ descricao.Descricao }}
             </p>
-            <BtnPadrao @AcaoBtn="AcaoMain" />
+            <BtnPadrao text="CONHEÇA" @AcaoBtn="AcaoMain" />
           </div>
         </div>
         <div class="efeitos">

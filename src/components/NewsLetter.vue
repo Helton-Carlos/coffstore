@@ -18,14 +18,13 @@
 export default {
   setup() {
     return {
-      ReceberEmail:""
+      ReceberEmail: "",
     };
   },
   methods: {
     EnviarArquivo() {
       alert(this.ReceberEmail);
     },
-    //this.ReceberEmail=""
   },
 };
 </script>
