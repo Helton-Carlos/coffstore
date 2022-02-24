@@ -13,7 +13,7 @@
             <img :src="produto.img" alt="produto.Nome_Produto" />
           </div>
         </div>
-        <div style="text-align: left">
+        <div style="text-align: left; margin-top: 50px">
           <h1>{{ produto.Nome_Produto }}</h1>
           <h2>Marca: {{ produto.Nome_Marca }}</h2>
           <h2>Preço: R${{ produto.Preco }}</h2>
@@ -21,12 +21,17 @@
             <h2>Quantidade:</h2>
             <h2 class="color">{{ this.qtde }}</h2>
           </div>
-          <div style="margin: 20px 0" class="flex">
-            <BtnPadrao text="+" style="margin-right: 20px" />
-            <BtnPadrao text="-" />
+
+          <p style="color: red">Quantidade maxima por produto 10 unidades.</p>
+          <div style="margin: 5px 0" class="flex">
+            <button style="margin-right: 15px" @click="remover()">Remover -</button>
+            <button @click="add()">Adicionar +</button>
           </div>
           <div style="margin: 20px 0">
-            <BtnPadrao text="COMPRAR" />
+            <BtnPadrao text="COMPRAR" @click="comprarProduto()" />
+          </div>
+          <div style="margin: 30px 0">
+            <BtnPadrao text="FAVORITO" @click="produtoFavorito()" />
           </div>
         </div>
       </div>
@@ -92,6 +97,18 @@ export default {
         }
       }
     },
+    comprarProduto() {},
+    produtoFavorito() {},
+    add() {
+      if (this.qtde < 10) {
+        this.qtde++;
+      }
+    },
+    remover() {
+      if (this.qtde >= 1) {
+        this.qtde--;
+      }
+    },
   },
   created() {
     this.buscarProduto();
@@ -105,7 +122,16 @@ export default {
   padding: 50px;
 }
 .color {
-  padding: 1px 5px;
+  padding: 0px 5px;
   background-color: #9e9e9e;
+}
+button {
+  padding: 10px 10px;
+  background-color: #222222;
+  color: #fff;
+  border: none;
+}
+button:hover {
+  background-color: #8a8a8a;
 }
 </style>

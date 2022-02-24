@@ -38,13 +38,13 @@
         <div class="flex">
           <img src="../assets/imagens/coracao.png" alt="coracao" />
           <p>
-            <strong>Favorito: {{ favorito }}</strong>
+            <strong>Favorito: {{ this.$store.state.favorito }}</strong>
           </p>
         </div>
         <div class="flex">
           <img src="../assets/imagens/carrinho.png" alt="carrinho" />
           <p style="margin-top: 5px">
-            <strong>Produtos: {{ carrinho }}</strong>
+            <strong>Produtos: {{ this.$store.state.carrinho }}</strong>
           </p>
         </div>
       </div>
@@ -69,7 +69,6 @@ export default {
   data() {
     return {
       favorito: 0,
-      carrinho: 0,
       navegacao: [
         { nome: "CAFÉS", rotas: "cafes" },
         { nome: "CAFETEIRAS", rotas: "cafeteiras" },
