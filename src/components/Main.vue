@@ -10,16 +10,21 @@
             class="click-btn"
           />
         </div>
+
         <div class="flex" v-for="(descricao, i) in produto" :key="i">
           <img :src="descricao.img" :alt="descricao.Nome_Produto" />
-          <div class="flex-coluna alinhar-esquerda fonte-branco">
+
+          <div class="flex-coluna alinhar-esquerda" style="color:#fff">
             <h2 class="espaco-cima">{{ descricao.Nome_Produto }}</h2>
+
             <p class="espaco-baixo" style="width: 450px">
               {{ descricao.Descricao }}
             </p>
+
             <BtnPadrao text="CONHEÇA" @AcaoBtn="AcaoMain" />
           </div>
         </div>
+
         <div class="efeitos">
           <img
             src="@/assets/imagens/SETA=BAIXO-1.png"
@@ -83,15 +88,19 @@ export default {
   margin-top: 20px;
   background-position: center;
 }
+
 .espaco-cima {
   padding: 40px 0px 10px;
 }
+
 .espaco-baixo {
   padding-bottom: 10px;
 }
+
 p {
   margin-bottom: 10px;
 }
+
 .click-btn:hover {
   transform: scale(1.1, 1.1);
 }

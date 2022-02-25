@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="flex-container">
+    <div class="flex-container" v-if="this.$route.fullPath === '/'">
       <nav class="center">
         <ul class="flex">
           <li v-for="navegar in navegacao" :key="navegar">

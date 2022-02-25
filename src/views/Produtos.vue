@@ -15,11 +15,11 @@
         </div>
         <div style="text-align: left; margin-top: 50px">
           <h1>{{ produto.Nome_Produto }}</h1>
-          <h2>Marca: {{ produto.Nome_Marca }}</h2>
-          <h2>Preço: R${{ produto.Preco }}</h2>
+          <h3>Marca: {{ produto.Nome_Marca }}</h3>
+          <h3>Preço: R${{ produto.Preco }}</h3>
           <div class="flex">
-            <h2>Quantidade:</h2>
-            <h2 class="color">{{ this.qtde }}</h2>
+            <h3>Quantidade:</h3>
+            <h3 class="color">{{ this.qtde }}</h3>
           </div>
 
           <p style="color: red">Quantidade maxima por produto 10 unidades.</p>
@@ -97,8 +97,13 @@ export default {
         }
       }
     },
-    comprarProduto() {},
-    produtoFavorito() {},
+    comprarProduto() {
+      alert("Esses produtos estão no carrinho: " + this.qtde + " und");
+      this.$store.state.carrinho = this.qtde + this.$store.state.carrinho;
+    },
+    produtoFavorito() {
+      this.$store.state.favorito = this.$store.state.favorito + 1;
+    },
     add() {
       if (this.qtde < 10) {
         this.qtde++;
@@ -124,6 +129,10 @@ export default {
 .color {
   padding: 0px 5px;
   background-color: #9e9e9e;
+}
+h3,
+p {
+  margin: 5px 0px;
 }
 button {
   padding: 10px 10px;
