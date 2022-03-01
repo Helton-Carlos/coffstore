@@ -9,12 +9,16 @@
       <hr />
       <div class="flex-container">
         <div style="margin-top: 50px">
-          <div class="espaco-img">
-            <img :src="produto.img" alt="produto.Nome_Produto" />
+          <img :src="produto.img" alt="produto.Nome_Produto" class="espaco-img" />
+          <div class="flex">
+            <img :src="produto.img" alt="produto.Nome_Produto" class="espaco-small-img" />
+            <img :src="produto.img" alt="produto.Nome_Produto" class="espaco-small-img" />
           </div>
         </div>
         <div style="text-align: left; margin-top: 50px">
           <h1>{{ produto.Nome_Produto }}</h1>
+          <p>Descrição</p>
+         <!-- <p style="width: 40%">{{ produto.Descricao }}</p>-->
           <h3>Marca: {{ produto.Nome_Marca }}</h3>
           <h3>Preço: R${{ produto.Preco }}</h3>
           <div class="flex">
@@ -124,8 +128,15 @@ export default {
 .espaco-img {
   width: 290px;
   border: 2px solid #000000;
-  padding: 50px;
+  padding: 40px;
 }
+.espaco-small-img {
+  width: 140px;
+  border: 2px solid #000000;
+  padding: 10px;
+  margin-right: 10px;
+}
+
 .color {
   padding: 0px 5px;
   background-color: #9e9e9e;
