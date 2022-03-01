@@ -15,18 +15,18 @@
         {{ titulos }}
       </a>
     </div>
-    <div class="flex-alinhar flex-container" style="width:80%;margin: 0 auto">
-      <div
-        class="box-produto"
-        v-for="(Produto, index) in this.getProdutos"
-        :key="index"
-      >
+    <div class="flex-alinhar flex-container" style="width: 80%; margin: 0 auto">
+      <div class="box-produto" v-for="(Produto, index) in this.getProdutos" :key="index">
         <img src="@/assets/imagens/tags-core.png" alt="tags" class="tags" />
         <img :src="Produto.img" :alt="Produto.Nome_Produto" class="produto" />
         <h4>{{ Produto.Nome_Produto }}</h4>
         <img src="@/assets/imagens/estrelas.png" alt="estrelas" />
         <div class="flex-alinhar">
-          <router-link :to="{name:'Produtos',params:{id:Produto.id}}" class="btn-red-pequeno">COMPRAR</router-link>
+          <router-link
+            :to="{ name: 'Produtos', params: { id: Produto.id } }"
+            class="btn-red-pequeno"
+            >COMPRAR</router-link
+          >
           <p>R$ {{ Produto.Preco }}</p>
         </div>
       </div>

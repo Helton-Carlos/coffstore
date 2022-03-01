@@ -2,7 +2,7 @@
   <div>
     <div class="flex-container">
       <div class="flex-coluna">
-        <h1 style="margin:20px 0px">Produtos:</h1>
+        <h1 style="margin: 20px 0px">Produtos:</h1>
         <div class="flex-wrap">
           <div
             class="box-produto"
@@ -10,15 +10,15 @@
             :key="index"
           >
             <img src="@/assets/imagens/tags-core.png" alt="tags" class="tags" />
-            <img
-              :src="Produto.img"
-              :alt="Produto.Nome_Produto"
-              class="produto"
-            />
+            <img :src="Produto.img" :alt="Produto.Nome_Produto" class="produto" />
             <h4>{{ Produto.Nome_Produto }}</h4>
             <img src="@/assets/imagens/estrelas.png" alt="estrelas" />
             <div class="flex-alinhar">
-              <a href="#" class="btn-red-pequeno">COMPRAR</a>
+              <router-link
+                :to="{ name: 'Produtos', params: { id: Produto.id } }"
+                class="btn-red-pequeno"
+                >COMPRAR</router-link
+              >
               <p>R$ {{ Produto.Preco }}</p>
             </div>
           </div>
