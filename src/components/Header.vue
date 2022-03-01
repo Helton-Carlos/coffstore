@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="flex-container" v-if="this.$route.fullPath === '/'">
+    <div class="flex-container" v-if="this.$route.name !== 'Produtos'">
       <nav class="center">
         <ul class="flex">
           <li v-for="navegar in navegacao" :key="navegar">
@@ -78,10 +78,13 @@ export default {
       ],
     };
   },
+  created() {
+   // console.log(this.$route.name);
+  },
 };
 </script>
 
-<style>
+<style scoped>
 .topo {
   background-color: #7b0202;
   width: 100%;

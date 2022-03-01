@@ -1,31 +1,24 @@
 <template>
   <div>
     <Header />
-    <div
-      v-for="(produto, i) in this.objProduto"
-      :key="i"
-      style="width: 80%; margin: 50px auto"
-    >
-      <hr />
+    <hr style="width: 80%; margin: 0px auto" />
+    <div v-for="(produto, i) in this.objProduto" :key="i" style="width: 80%; margin: 0px auto" >
       <div class="flex-container">
-        <div style="margin-top: 50px">
+        <div style="margin-top: 20px">
           <img :src="produto.img" alt="produto.Nome_Produto" class="espaco-img" />
           <div class="flex">
             <img :src="produto.img" alt="produto.Nome_Produto" class="espaco-small-img" />
             <img :src="produto.img" alt="produto.Nome_Produto" class="espaco-small-img" />
           </div>
         </div>
-        <div style="text-align: left; margin-top: 50px">
+        <div>
           <h1>{{ produto.Nome_Produto }}</h1>
-          <p>Descrição</p>
-         <!-- <p style="width: 40%">{{ produto.Descricao }}</p>-->
-          <h3>Marca: {{ produto.Nome_Marca }}</h3>
-          <h3>Preço: R${{ produto.Preco }}</h3>
+          <p>Marca: {{ produto.Nome_Marca }}</p>
+          <p>Preço: R${{ produto.Preco }}</p>
           <div class="flex">
-            <h3>Quantidade:</h3>
-            <h3 class="color">{{ this.qtde }}</h3>
+            <p>Quantidade:</p>
+            <p class="color">{{ this.qtde }}</p>
           </div>
-
           <p style="color: red">Quantidade maxima por produto 10 unidades.</p>
           <div style="margin: 5px 0" class="flex">
             <button style="margin-right: 15px" @click="remover()">Remover -</button>
@@ -141,9 +134,8 @@ export default {
   padding: 0px 5px;
   background-color: #9e9e9e;
 }
-h3,
 p {
-  margin: 5px 0px;
+  margin: 2px 0px;
 }
 button {
   padding: 10px 10px;

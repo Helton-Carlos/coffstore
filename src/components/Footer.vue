@@ -8,7 +8,9 @@
       <div>
         <p class="borda-red">Loja</p>
         <li v-for="navegar in navegacao" :key="navegar">
-          <a href="#">{{ navegar }}</a>
+          <router-link class="navegar" :to="navegar.rotas">{{
+            navegar.nome
+          }}</router-link>
         </li>
       </div>
       <div>
@@ -31,7 +33,13 @@
 export default {
   setup() {
     return {
-      navegacao: ["CAFÉS", "CAFETEIRAS", "CHÁ", "ACESSÓRIOS", "CONTATOS"],
+      navegacao: [
+        { nome: "CAFÉS", rotas: "cafes" },
+        { nome: "CAFETEIRAS", rotas: "cafeteiras" },
+        { nome: "CHÁ", rotas: "cha" },
+        { nome: "ACESSÓRIOS", rotas: "acessorios" },
+        { nome: "CONTATOS", rotas: "contatos" },
+      ],
       atendimento: [
         "MEUS PEDIDOS",
         "MINHA CONTA",
@@ -69,6 +77,10 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.fim{
-text-align: center;padding: 20px;font-size: 12px;font-weight: 500;}
+.fim {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
 </style>
